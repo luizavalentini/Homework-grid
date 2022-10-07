@@ -2,7 +2,7 @@ img {
   max-width: 100%;
   display: block;
 }
-.grid {
+.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 780px;
@@ -11,14 +11,14 @@ img {
   padding: 10px;
 }
 
-.grid > div:nth-child(n + 4) {
+.container > div:nth-child(n + 4) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   align-items: center;
 }
 
-.grid > div.Propaganda{
+.container > div.Propaganda{
   grid-column: 1;
   grid-row: 2 / 5;
   display: block;
@@ -26,11 +26,3 @@ img {
 }
 
 
-/* @media (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(w, 1fr);
-  }
-  .grid > div:nth-child(n + 4) {
-    display: block;
-  }
-} */
