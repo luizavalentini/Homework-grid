@@ -1,0 +1,36 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 780px;
+  margin: 0 auto;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.grid > div:nth-child(n + 4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.grid > div.Propaganda{
+  grid-column: 1;
+  grid-row: 2 / 5;
+  display: block;
+  border-top: 10px solid;
+}
+
+
+/* @media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(w, 1fr);
+  }
+  .grid > div:nth-child(n + 4) {
+    display: block;
+  }
+} */
