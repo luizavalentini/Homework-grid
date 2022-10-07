@@ -18,11 +18,9 @@ img {
   align-items: center;
 }
 
-.container > div.Propaganda{
+.container > div.Propaganda {
   grid-column: 1;
   grid-row: 2 / 5;
   display: block;
   border-top: 10px solid;
 }
-
-
